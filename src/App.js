@@ -21,7 +21,7 @@ const App = () => {
         type="range"
         value={imageIndex}
         onChange={(e) => setImageIndex(e.target.value)}
-        min="1"
+        min="0"
         max="72"
         step="1"
       />
