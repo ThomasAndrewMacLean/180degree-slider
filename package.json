@@ -1,5 +1,5 @@
 {
-  "name": "180degree-slider",
+  "name": "360degree-slider",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThomasAndrewMacLean/180degree-slider.git"
+    "url": "git+https://github.com/ThomasAndrewMacLean/360degree-slider.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ThomasAndrewMacLean/180degree-slider/issues"
+    "url": "https://github.com/ThomasAndrewMacLean/360degree-slider/issues"
   },
-  "homepage": "https://github.com/ThomasAndrewMacLean/180degree-slider#readme",
+  "homepage": "https://github.com/ThomasAndrewMacLean/360degree-slider#readme",
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
