@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --mode development --config webpack.config.js --progress --profile --watch --content-base src/",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "post-build": "cp -r ./src/static  ./dist/static"
   },
   "repository": {
     "type": "git",
