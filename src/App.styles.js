@@ -2,6 +2,18 @@ import styled from "styled-components";
 
 export const Title = styled.h1`
   font-size: 4rem;
+
+  // 👇 show a solid color in older browsers (e.g., IE11)
+  color: darkblue;
+
+  // 👇 show the text gradient in modern browsers
+  @supports (--css: variables) {
+    //background: linear-gradient(to right, darkblue, darkorchid);
+    background: linear-gradient(to right, #247e8b, #b1d3c9);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 `;
 
 export const Main = styled.main`
@@ -28,7 +40,7 @@ export const Main = styled.main`
     outline: none;
   }
   input[type="range"]::-webkit-slider-runnable-track {
-    background: #3071a9;
+    background: #449ba3;
     border: 0.2px solid #010101;
     border-radius: 1.3px;
     width: 100%;
@@ -46,10 +58,10 @@ export const Main = styled.main`
     -webkit-appearance: none;
   }
   input[type="range"]:focus::-webkit-slider-runnable-track {
-    background: #367ebd;
+    background: #3d7e84;
   }
   input[type="range"]::-moz-range-track {
-    background: #3071a9;
+    background: #449ba3;
     border: 0.2px solid #010101;
     border-radius: 1.3px;
     width: 100%;
@@ -74,12 +86,12 @@ export const Main = styled.main`
     cursor: pointer;
   }
   input[type="range"]::-ms-fill-lower {
-    background: #2a6495;
+    background: #449ba3;
     border: 0.2px solid #010101;
     border-radius: 2.6px;
   }
   input[type="range"]::-ms-fill-upper {
-    background: #3071a9;
+    background: #449ba3;
     border: 0.2px solid #010101;
     border-radius: 2.6px;
   }
