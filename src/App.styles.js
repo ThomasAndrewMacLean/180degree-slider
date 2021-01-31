@@ -5,6 +5,9 @@ export const Title = styled.h1`
 `;
 
 export const Main = styled.main`
+  img {
+    mix-blend-mode: multiply;
+  }
   /* background-color: lightgrey; */
   display: flex;
   flex-direction: column;
